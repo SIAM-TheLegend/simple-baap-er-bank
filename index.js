@@ -4,4 +4,7 @@ document.getElementById('submit').addEventListener('click', function() {
   if (username === 'sontan@baap.com' && password === 'secret') {
     location.replace("bank.html");
   }
+  else {
+    alert('Oboidho sontan der jayga dewa hoy na. Baap er prokrito sontan chara keu dhukar permission nai.');
+  }
 })

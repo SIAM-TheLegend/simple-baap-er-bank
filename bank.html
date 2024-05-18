@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/x-icon" href="https://i.ibb.co/ZSr6Ymt/Bank.png">
   <title>Bank</title>
 </head>
-<body>
-  <h1>This is Bank of Baap</h1>
+
+<body class="bg-teal-100 flex flex-col h-screen">
+  <h1 class="text-4xl text-center my-14">This is the <span class="text-orange-600">Bank</span> of <span
+      class="text-violet-500">Baap</span></h1>
+
+  <section class="flex flex-row flex-grow items-center place-content-evenly">
+    <div class="text-lg bg-green-400 py-4 w-1/4 rounded-xl text-center">
+      <h3>Deposit</h3>
+      <p>$ <span class="deposit-amount">0</span></p>
+    </div>
+    <div class="text-lg bg-pink-400 py-4 w-1/4 rounded-xl text-center">
+      <h3>Withdraw</h3>
+      <p>$ <span class="withdraw-amount">0</span></p>
+    </div>
+    <div class="text-lg bg-red-400 py-4 w-1/4 rounded-xl text-center">
+      <h3>Balance</h3>
+      <p>$ <span class="total-amount">180</span></p>
+    </div>
+  </section>
+
+  <section class="flex flex-row flex-grow items-center place-content-evenly">
+    <div class="text-lg bg-cyan-400 py-4 w-2/5 rounded-xl text-center">
+      <h3 class="text-left ml-5">Deposit:</h3>
+      <input class="text-sm w-5/6 mt-4 mb-2 p-1 rounded-md" type="number" placeholder="Show sympathy to Baap">
+      <br>
+      <button class="text-sm bg-cyan-600 rounded-md px-3 py-2">Submit</button>
+    </div>
+    <div class="text-lg bg-indigo-400 py-4 w-2/5 rounded-xl text-center">
+      <h3 class="text-left ml-5">Withdraw:</h3>
+      <input class="text-sm w-5/6 mt-4 mb-2 p-1 rounded-md" type="number" placeholder="Make the Pocket of Baap empty">
+      <br>
+      <button class="text-sm bg-indigo-600 rounded-md px-3 py-2">Submit</button>
+    </div>
+  </section>
+  <p class="text-center bg-teal-200">Made by Siam</p>
 </body>
+
 </html>
