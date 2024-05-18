@@ -16,33 +16,34 @@
   <section class="flex flex-row flex-grow items-center place-content-evenly">
     <div class="text-lg bg-green-400 py-4 w-1/4 rounded-xl text-center">
       <h3>Deposit</h3>
-      <p>$ <span class="deposit-amount">0</span></p>
+      <p>$ <span id="deposit-amount">0</span></p>
     </div>
     <div class="text-lg bg-pink-400 py-4 w-1/4 rounded-xl text-center">
       <h3>Withdraw</h3>
-      <p>$ <span class="withdraw-amount">0</span></p>
+      <p>$ <span id="withdraw-amount">0</span></p>
     </div>
     <div class="text-lg bg-red-400 py-4 w-1/4 rounded-xl text-center">
       <h3>Balance</h3>
-      <p>$ <span class="total-amount">180</span></p>
+      <p>$ <span id="total-amount">180</span></p>
     </div>
   </section>
 
   <section class="flex flex-col md:flex-row flex-grow items-center place-content-evenly">
     <div class="text-lg bg-cyan-400 py-4 w-5/6 md:2/5 rounded-xl text-center">
       <h3 class="text-left ml-5">Deposit:</h3>
-      <input class="text-sm w-5/6 mt-4 mb-2 p-1 rounded-md" type="number" placeholder="Show sympathy to Baap">
+      <input id="deposit-value" class="text-sm w-5/6 mt-4 mb-2 p-1 rounded-md" type="number" placeholder="Show sympathy to Baap er Pocket">
       <br>
-      <button class="text-sm bg-cyan-600 rounded-md px-3 py-2">Submit</button>
+      <button id="deposit-submit" class="text-sm bg-cyan-600 rounded-md px-3 py-2">Submit</button>
     </div>
     <div class="text-lg bg-indigo-400 py-4 w-5/6 md:w-2/5 rounded-xl text-center">
       <h3 class="text-left ml-5">Withdraw:</h3>
-      <input class="text-sm w-5/6 mt-4 mb-2 p-1 rounded-md" type="number" placeholder="Make the Pocket of Baap empty">
+      <input id="withdraw-value" class="text-sm w-5/6 mt-4 mb-2 p-1 rounded-md" type="number" placeholder="Make the Baap er Pocket empty">
       <br>
-      <button class="text-sm bg-indigo-600 rounded-md px-3 py-2">Submit</button>
+      <button id="withdraw-submit" class="text-sm bg-indigo-600 rounded-md px-3 py-2">Submit</button>
     </div>
   </section>
   <p class="text-center bg-teal-200">Made by Siam</p>
-</body>
 
+  <script src="bank.js"></script>
+</body>
 </html>
